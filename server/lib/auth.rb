@@ -21,6 +21,6 @@ class Auth
   end
 
   def self.auth_secret
-    ENV["secret_key_base"]
+    ENV["SECRET_KEY_BASE"]
   end
 end
