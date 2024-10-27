@@ -1,12 +1,12 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: pbl6
+    databaseName: pbl6
+    user: pbl6
     plan: free
 
 services:
   - type: web
-    name: mysite
+    name: pbl6
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
@@ -15,8 +15,8 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: mysite
+          name: pbl6
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync:false- key: WEB_CONCURRENCY
-        value: 2 # sensible default
+        value: 2
