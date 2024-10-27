@@ -166,7 +166,6 @@ GEM
     multi_xml (0.7.1)
       bigdecimal (~> 3.1)
     mutex_m (0.2.0)
-    mysql2 (0.5.6)
     net-imap (0.4.14)
       date
       net-protocol
@@ -186,6 +185,8 @@ GEM
     parser (3.3.4.2)
       ast (~> 2.4.1)
       racc
+    pg (1.5.9)
+    pg (1.5.9-x64-mingw-ucrt)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -347,8 +348,8 @@ DEPENDENCIES
   image_processing (~> 1.2)
   jsonapi-serializer
   jwt (~> 2.5)
-  mysql2 (~> 0.5)
   pagy
+  pg (~> 1.1)
   pry-rails
   puma (>= 5.0)
   rack-cors
