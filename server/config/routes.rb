@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
     resources :courses, only: %i(show index) do
       resources :lessons, only: :index
+      resources :ratings, only: :create, controller: "course_ratings"
       post "assign", on: :member
       collection do
         get "search"
@@ -46,6 +47,7 @@ Rails.application.routes.draw do
       resources :users, only: %i(index)
       resources :teachers, only: %i(index destroy)
       resources :courses, only: %i(index destroy)
+      get "dashboard_stats", to: "courses#dashboard_stats"
       resources :accounts do
         patch :update_status, on: :member
       end
@@ -61,12 +63,18 @@ Rails.application.routes.draw do
       resources :courses, only: %i(index show destroy update) do
         resources :lessons, only: %i(create index)
       end
-      resources :lessons, only: %i(index destroy)
+      resources :lessons, only:  %i(destroy update show)
       resource :teachers do
         get "profile", to: "teachers#profile"
         patch "update_profile", to: "teachers#update"
       end
       get "dashboard", to: "courses#dashboard"
+      resources :course_assignments, only: :index do
+        member do
+          patch :update_status
+        end
+      end
+      resources :accounts, only: :create
     end
   end
 end
