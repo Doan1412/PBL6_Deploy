@@ -16,9 +16,9 @@ teachers_data = JSON.parse(teachers_file)
 lectures_data = JSON.parse(lectures_file)
 
 teachers_map = {}
-teachers_data.each_with_index do |teacher, index|
+teachers_data.each do |teacher|
   account = Account.create!(
-    email: "teacher#{index + 1}@mail.com",
+    email: Faker::Internet.unique.email,
     password: "password",
     activated: true,
     roles: 1
