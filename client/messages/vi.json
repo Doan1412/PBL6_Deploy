@@ -61,7 +61,9 @@
     "login_successful": "Đăng nhập thành công!",
     "processing": "Đang xử lý ...",
     "processing_check": "Đang kiểm tra email của bạn...",
-    "close": "Đóng"
+    "close": "Đóng",
+    "signup_teacher_account": "Đăng ký tài khoản",
+    "signup_teacher": "giáo viên"
   },
   "show_course": {
     "title": "Chi tiết thông tin khóa học",
@@ -78,7 +80,10 @@
     "pending": "Đang chờ xử lý...",
     "accepted": "Đã đăng ký",
     "please_login": "Vui lòng đăng nhập để đăng ký khóa học này",
-    "enrolled": "Vào học ngay"
+    "enrolled": "Vào học ngay",
+    "review_star": "(Click để đánh giá khóa học này)",
+    "rating_success": "Đánh giá thành công!!!",
+    "average_rating": " trong số 5"
   },
   "nodata": {
     "no_data_title": "Không tìm thấy kết quả",
@@ -107,7 +112,8 @@
     "translate": "Dịch",
     "category": "Danh mục khóa học",
     "logo": "Return",
-    "search_placeholder": "Tìm kiếm khóa học"
+    "search_placeholder": "Tìm kiếm khóa học",
+    "check_grammar": "Kiểm tra ngữ pháp"
   },
   "announcements": {
     "title": "Thông báo",
@@ -119,8 +125,8 @@
     "title": "Attendance"
   },
   "footer_page": {
-    "title": "The Coding Journey",
-    "description": "TCJ là nền tảng cung cấp các kiến thức lập trình từ cơ bản đến nâng cao, giúp các lập trình viên tương lai phát triển kỹ năng, xây dựng dự án và khởi nghiệp trong lĩnh vực công nghệ.",
+    "title": "Return",
+    "description": "Return là một nền tảng dành riêng để hỗ trợ những người học tiếng Nhật. Từ các bài học cơ bản đến các khái niệm ngôn ngữ nâng cao, chúng tôi cung cấp trải nghiệm học tập toàn diện, giúp bạn thành thạo tiếng Nhật, luyện viết Kanji và nâng cao kỹ năng giao tiếp phục vụ học tập, công việc, hoặc phát triển cá nhân.",
     "coursesTitle": "Khoá học",
     "linksTitle": "Liên kết",
     "getInTouchTitle": "Liên hệ",
@@ -155,7 +161,8 @@
   },
   "course_card": {
     "detail": "Xem chi tiết",
-    "category": "Danh mục"
+    "category": "Danh mục",
+    "average_rating": " trong số 5"
   },
   "mycourse": {
     "title": "Khóa học của tôi",
@@ -207,7 +214,7 @@
   },
   "banner2": {
     "heading": "Tham gia cộng đồng của chúng tôi để bắt đầu hành trình của bạn",
-    "description": "Hơn 300 video bài giảng business chất lượng. Hỗ trợ đủ các kỹ năng khi phỏng vấn, viết mail, giao tiếp trong môi trường công sở.",
+    "description": "Hơn 300 video bài giảng tiếng Nhật chất lượng. Hỗ trợ đủ các kỹ năng khi viết, nghe hiểu, đọc hiểu, giao tiếp trong môi trường công sở.",
     "joinNow": "Tham gia ngay"
   },
   "banner1": {
@@ -410,7 +417,8 @@
     "lesson_details": "Chi tiết bài học",
     "create_day": "Ngày tạo",
     "update_date": "Ngày cập nhật",
-    "subscribe": "Đăng kí"
+    "subscribe": "Đăng kí",
+    "subscribed": "Đã đăng kí"
   },
   "lesson_page_scroll": {
     "video": "Video",
@@ -567,6 +575,136 @@
     "lessons_list_title": "Danh sách bài học của khóa học",
     "previous": "Trước",
     "next": "Tiếp theo",
-    "error": "Đã xảy ra lỗi."
+    "error": "Đã xảy ra lỗi.",
+    "add_course": "Tạo bài học"
+  },
+  "edit_lesson": {
+    "title": "Chỉnh sửa bài học",
+    "add_lesson": "Chỉnh sửa bài học cho",
+    "title_lesson": "Tiêu đề bài học",
+    "course": "Khóa học",
+    "content": "Nội dung",
+    "write_content": "Viết nội dung...",
+    "list_kanji": "Danh sách Kanji",
+    "write_list_kanji": "Viết Kanji cách nhau bằng dấu phẩy...",
+    "url_video": "URL Video",
+    "upload": "Tải video lên",
+    "existing_video": "URL video hiện có *(tải video mới lên sẽ thay thế video hiện có)",
+    "upload_success": "Tải lên thành công!",
+    "update_success": "Cập nhật bài học thành công!",
+    "update_failed": "Cập nhật bài học thất bại!",
+    "submit_add_lesson": "Gửi"
+  },
+  "list_requests_course": {
+    "title": "Yêu cầu giao khoá học",
+    "searchUser": "Tìm theo người dùng",
+    "searchTitle": "Tìm theo tiêu đề khoá học",
+    "filterStatus": "Lọc theo trạng thái",
+    "status": "Trạng thái",
+    "allStatus": "Tất cả trạng thái",
+    "accepted": "Đã chấp nhận",
+    "pending": "Đang chờ",
+    "rejected": "Đã từ chối",
+    "search": "Tìm kiếm",
+    "error": "Có lỗi xảy ra",
+    "update_fail": "Cập nhật trạng thái thất bại",
+    "previous": "Trước",
+    "next": "Tiếp theo"
+  },
+  "list_requests_assign": {
+    "req_title": "Tiêu Đề Khóa Học",
+    "status": "Trạng Thái",
+    "level": "Cấp Độ",
+    "action": "Hành Động",
+    "details": "Chi Tiết",
+    "resolved": "Đã Xử Lý",
+    "request_details": "Chi Tiết Yêu Cầu",
+    "avatarAlt": "Ảnh Khóa Học",
+    "title": "Tiêu Đề",
+    "teacher": "Giáo Viên",
+    "createdAt": "Ngày Tạo",
+    "cancel": "Hủy",
+    "accepted": "Được Chấp Nhận",
+    "pending": "Đang Chờ",
+    "rejected": "Bị Từ Chối",
+    "N1": "N1",
+    "N2": "N2",
+    "N3": "N3",
+    "N4": "N4",
+    "N5": "N5",
+    "user_request": "Yêu cầu từ học sinh:",
+    "student": "Học viên"
+  },
+  "write_kanji": {
+    "noKanji": "Không có kanji",
+    "practice": "Luyện tập",
+    "kanji": "Kanji",
+    "kunyomi": "Kunyomi",
+    "onyomi": "Onyomi",
+    "radical": "Radical",
+    "examples": "Ví dụ",
+    "playAudio": "Phát âm thanh"
+  },
+  "grammar": {
+    "title": "Kiểm tra ngữ pháp",
+    "input": "Nhập văn bản để kiểm tra ngữ pháp...",
+    "check_grammar_failed": "Kiểm tra ngữ pháp thất bại. Vui lòng thử lại.",
+    "grammar_correct": "Ngữ pháp chính xác.",
+    "grammar_incorrect": "Ngữ pháp không chính xác.",
+    "error_occurred": "Đã xảy ra lỗi khi kiểm tra ngữ pháp.",
+    "recommendation": "Gợi ý chỉnh sửa",
+    "loading_text": "Đang kiểm tra ngữ pháp...",
+    "check_grammar": "Kiểm tra ngữ pháp"
+  },
+  "sign_up_teacher": {
+    "title": "Sign Up as Teacher",
+    "welcome_message": "Welcome to the Teacher Registration Page",
+    "sign_up": "Sign Up",
+    "sign_up_prompt": "Please fill in your information to create a teacher account.",
+    "full_name": "Full Name",
+    "email": "Email",
+    "job_title": "Job Title",
+    "experience": "Experience",
+    "password": "Password",
+    "re_password": "Confirm Password",
+    "check_mail": "Please check your email to confirm your account.",
+    "register_failed": "Registration failed, please try again.",
+    "login_successful": "Login successful!",
+    "login_failed": "Login failed, please try again.",
+    "processing": "Processing...",
+    "processing_check": "We are verifying your information.",
+    "close": "Close",
+    "have_account": "Already have an account?",
+    "page_login": "Login",
+    "or_continue_with": "Or continue with"
+  },
+  "navbar_teacher": {
+    "error": "Đã xảy ra lỗi khi lấy thông tin hồ sơ.",
+    "button_sign_in": "Đăng nhập",
+    "admin": "Admin",
+    "no_token_message": "You are not logged in. Redirecting to login page..."
+  },
+  "admin_dashboard": {
+    "general_analysis": "Phân tích chung",
+    "title": "Bảng điều khiển Quản trị",
+    "total_assigned_courses": "Tổng số khóa học đã phân công",
+    "total_teachers": "Tổng số giảng viên",
+    "total_users": "Tổng số người dùng",
+    "total_courses": "Tổng số khóa học",
+    "no_token_message": "Không tìm thấy token. Vui lòng đăng nhập lại.",
+    "error": "Đã xảy ra lỗi khi lấy dữ liệu.",
+    "teachers_number": "Số lượng giáo viên theo danh mục",
+    "unknown": "Không xác định",
+    "course_enroll_request": "Yêu cầu đăng ký khóa học",
+    "approved": "Đã duyệt",
+    "pending": "Chờ duyệt",
+    "rejected": "Bị từ chối",
+    "course_requests": "Yêu cầu khóa học",
+    "course_title": "Tiêu đề khóa học",
+    "status": "Trạng thái",
+    "create_at": "Ngày tạo",
+    "previous": "Trước",
+    "next": "Tiếp theo",
+    "loading": "Đang tải..."
   }
 }

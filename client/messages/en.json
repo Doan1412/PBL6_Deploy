@@ -65,7 +65,9 @@
     "login_successful": "Login successful!",
     "processing": "Processing ...",
     "processing_check": "Checking email for you...",
-    "close": "Close"
+    "close": "Close",
+    "signup_teacher_account": "Sign up",
+    "signup_teacher": "as a teacher"
   },
   "show_course": {
     "title": "Detail Course",
@@ -82,7 +84,10 @@
     "pending": "Pending...",
     "accepted": "Accepted",
     "please_login": "Please login to enroll this course",
-    "enrolled": "Go to"
+    "enrolled": "Go to",
+    "review_star": "(Click rate this course)",
+    "rating_success": "Rating success!!!",
+    "average_rating": " out of 5"
   },
   "nodata": {
     "no_data_title": "No result found",
@@ -111,7 +116,8 @@
     "translate": "Translate",
     "category": "Category",
     "logo": "Return",
-    "search_placeholder": "Search for courses"
+    "search_placeholder": "Search for courses",
+    "check_grammar": "Check grammar"
   },
   "announcements": {
     "title": "Announcements",
@@ -123,8 +129,8 @@
     "title": "Attendance Chart"
   },
   "footer_page": {
-    "title": "The Coding Journey",
-    "description": "TCJ is a platform dedicated to empowering aspiring developers. From beginner tutorials to advanced programming concepts, we provide a comprehensive learning experience designed to help you master coding skills, build projects, and launch your tech career.",
+    "title": "Return",
+    "description": "Return is a platform dedicated to empowering aspiring Japanese learners. From beginner lessons to advanced language concepts, we provide a comprehensive learning experience designed to help you master Japanese, practice Kanji, and enhance your communication skills for academic, professional, or personal growth.",
     "coursesTitle": "Courses",
     "linksTitle": "Links",
     "getInTouchTitle": "Get In Touch",
@@ -159,7 +165,8 @@
   },
   "course_card": {
     "detail": "View Details",
-    "category": "Category"
+    "category": "Category",
+    "average_rating": " out of 5"
   },
   "mycourse": {
     "title": "My Courses",
@@ -211,7 +218,7 @@
   },
   "banner2": {
     "heading": "Join Our Community to Start your Journey",
-    "description": "More than 300 high-quality business lectures. Supports all skills in interviews, writing emails, and communication in the workplace.",
+    "description": "More than 300 high-quality Japanese lectures. Supports all skills in writing, listening, reading, and communication in the workplace.",
     "joinNow": "Join Now"
   },
   "banner1": {
@@ -414,7 +421,8 @@
     "lesson_details": "Lesson Details",
     "create_day": "Created on",
     "update_date": "Updated on",
-    "subscribe": "Subscribe"
+    "subscribe": "Subscribe",
+    "subscribed": "Subscribed"
   },
   "lesson_page_scroll": {
     "video": "Video",
@@ -571,6 +579,136 @@
     "lessons_list_title": "List lessons of course",
     "previous": "Previous",
     "next": "Next",
-    "error": "An error occurred."
+    "error": "An error occurred.",
+    "add_course": "Create lesson"
+  },
+  "edit_lesson": {
+    "title": "Edit Lesson",
+    "add_lesson": "Editing lesson for",
+    "title_lesson": "Lesson Title",
+    "course": "Course",
+    "content": "Content",
+    "write_content": "Write content...",
+    "list_kanji": "Kanji List",
+    "write_list_kanji": "Write Kanji separated by commas...",
+    "url_video": "Video URL",
+    "upload": "Upload Video",
+    "existing_video": "Existing video URL *(uploading a new video will replace the existing one)",
+    "upload_success": "Upload successful!",
+    "update_success": "Lesson updated successfully!",
+    "update_failed": "Failed to update lesson!",
+    "submit_add_lesson": "Submit"
+  },
+  "list_requests_course": {
+    "title": "Course Assignment Requests",
+    "searchUser": "Search by User",
+    "searchTitle": "Search by Course Title",
+    "filterStatus": "Filter by Status",
+    "status": "Status",
+    "allStatus": "All Statuses",
+    "accepted": "Accepted",
+    "pending": "Pending",
+    "rejected": "Rejected",
+    "search": "Search",
+    "error": "An error occurred",
+    "update_fail": "Failed to update status",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "list_requests_assign": {
+    "req_title": "Course Title",
+    "status": "Status",
+    "level": "Level",
+    "action": "Action",
+    "details": "Details",
+    "resolved": "Resolved",
+    "request_details": "Request Details",
+    "avatarAlt": "Course Image",
+    "title": "Title",
+    "teacher": "Teacher",
+    "createdAt": "Created At",
+    "cancel": "Cancel",
+    "accepted": "Accepted",
+    "pending": "Pending",
+    "rejected": "Rejected",
+    "N1": "N1",
+    "N2": "N2",
+    "N3": "N3",
+    "N4": "N4",
+    "N5": "N5",
+    "user_request": "User Request",
+    "student": "Student"
+  },
+  "write_kanji": {
+    "noKanji": "No kanji available",
+    "practice": "Practice",
+    "kanji": "Kanji",
+    "kunyomi": "Kunyomi",
+    "onyomi": "Onyomi",
+    "radical": "Radical",
+    "examples": "Examples",
+    "playAudio": "Play Audio"
+  },
+  "grammar": {
+    "title": "Grammar Check",
+    "input": "Enter text to check grammar...",
+    "check_grammar_failed": "Failed to check grammar. Please try again.",
+    "grammar_correct": "The grammar is correct.",
+    "grammar_incorrect": "The grammar is incorrect.",
+    "error_occurred": "An error occurred while checking the grammar.",
+    "recommendation": "Suggested correction",
+    "loading_text": "Checking grammar...",
+    "check_grammar": "Check grammar"
+  },
+  "sign_up_teacher": {
+    "title": "Đăng ký Giảng viên",
+    "welcome_message": "Chào mừng đến với trang đăng ký giảng viên",
+    "sign_up": "Đăng ký",
+    "sign_up_prompt": "Vui lòng điền thông tin của bạn để tạo tài khoản giảng viên.",
+    "full_name": "Họ và tên",
+    "email": "Email",
+    "job_title": "Chức danh",
+    "experience": "Kinh nghiệm",
+    "password": "Mật khẩu",
+    "re_password": "Nhập lại mật khẩu",
+    "check_mail": "Vui lòng kiểm tra email của bạn để xác nhận tài khoản.",
+    "register_failed": "Đăng ký thất bại, vui lòng thử lại.",
+    "login_successful": "Đăng nhập thành công!",
+    "login_failed": "Đăng nhập thất bại, vui lòng thử lại.",
+    "processing": "Đang xử lý...",
+    "processing_check": "Chúng tôi đang kiểm tra thông tin của bạn.",
+    "close": "Đóng",
+    "have_account": "Bạn đã có tài khoản?",
+    "page_login": "Đăng nhập",
+    "or_continue_with": "Hoặc tiếp tục với"
+  },
+  "navbar_teacher": {
+    "error": "An error occurred while fetching the profile.",
+    "button_sign_in": "Sign in",
+    "admin": "Admin",
+    "no_token_message": "You are not logged in. Redirecting to login page..."
+  },
+  "admin_dashboard": {
+    "general_analysis": "General Analysis",
+    "title": "Admin Dashboard",
+    "total_assigned_courses": "Total Assigned Courses",
+    "total_teachers": "Total Teachers",
+    "total_users": "Total Users",
+    "total_courses": "Total Courses",
+    "no_token_message": "No token found. Please log in again.",
+    "error": "An error occurred while fetching data.",
+    "teachers_number": "Number of teachers by category",
+    "unknown": "Unknown",
+    "course_enroll_request": "Course Enrollment Requests",
+    "approved": "Approved",
+    "pending": "Pending",
+    "rejected": "Rejected",
+    "course_requests": "Course Requests",
+    "course_title": "Course Title",
+    "status": "Status",
+    "create_at": "Created At",
+    "previous": "Previous",
+    "next": "Next",
+    "loading" : "Loading..."
   }
 }
