@@ -39,10 +39,15 @@ const NavbarMenu = [
   {
     id: 2,
     key: 'translate',
-    path: 'translate'
+    path: '/user/translate'
   },
   {
     id: 3,
+    key: 'check_grammar',
+    path: '/user/grammar'
+  },
+  {
+    id: 4,
     key: 'category',
     path: '#'
   }
@@ -125,11 +130,10 @@ const Navbar = () => {
                 {menu.key === 'category' ? (
                   <div>
                     <div className='group relative cursor-pointer'>
-                      <div className='inline-block py-2 px-3 hover:text-secondary relative group dark:text-dark'>
+                      <div className='inline-block py-2 px-3 hover:text-secondary relative group'>
                         <div className='w-2 h-2 bg-secondary absolute mt-4 rounded-full left-1/2 -translate-x-1/2 top-1/2 bottom-0 group-hover:block hidden cursor-pointer'></div>
                         {t('category')}
                       </div>
-
                       <div className='invisible absolute z-50 flex flex-col w-60 bg-white py-1 px-4 text-gray-800 shadow-xl group-hover:visible rounded-lg'>
                         {category?.map((categories, index) => (
                           <Link
@@ -144,17 +148,13 @@ const Navbar = () => {
                     </div>
                   </div>
                 ) : (
-                  <Link
-                    href={`${menu.path}`}
-                    className='inline-block py-2 px-3 hover:text-secondary relative group dark:text-dark'
-                  >
+                  <Link href={`${menu.path}`} className='inline-block py-2 px-3 hover:text-secondary relative group'>
                     <div className='w-2 h-2 bg-secondary absolute mt-4 rounded-full left-1/2 -translate-x-1/2 top-1/2 bottom-0 group-hover:block hidden cursor-pointer'></div>
                     {t(menu.key)}
                   </Link>
                 )}
               </li>
             ))}
-
             <ModeToggle />
             <Link href={switchLanguage('en', pathname, queryString)}>
               <Image src={Flag_EN} alt='Flag EN' className='w-9 h-7' />

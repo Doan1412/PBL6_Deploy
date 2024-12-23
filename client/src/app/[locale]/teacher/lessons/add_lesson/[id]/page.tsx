@@ -69,7 +69,7 @@ export default function AddLessonsPage({ params }: { params: { id: string } }) {
     try {
       await http.post(`instructor/courses/${params.id}/lessons`, requestData)
       dispatch(successPopUp(t('update_success')))
-      router.push(`/teacher/lessons`)
+      router.push(`/teacher/lessons/${params.id}`)
     } catch {
       dispatch(failPopUp(t('update_failed')))
     }
@@ -164,7 +164,6 @@ export default function AddLessonsPage({ params }: { params: { id: string } }) {
                     setUrlVideo(result?.info?.secure_url)
                   }}
                   onError={(error: any) => {
-                    console.error('Upload failed:', error)
                     dispatch(failPopUp('Upload failed, please try again'))
                   }}
                   uploadPreset='s2lo0hgq'

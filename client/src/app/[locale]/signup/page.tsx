@@ -60,7 +60,6 @@ export default function SignUpPage() {
   const handleLoginSuccess = (response: { message: AuthenticationType }) => {
     const token = response.message.jwt
     const role = response.message.roles
-    console.log(role)
     setCookie('authToken', token)
     setCookie('role', role)
     dispatch(successPopUp(t('login_successful')))
@@ -92,7 +91,6 @@ export default function SignUpPage() {
       const res = await http.post(`auth/google_oauth2`, { auth: { id_token: response.credential } })
       handleLoginSuccess(res.data)
     } catch {
-      console.log(t('login_failed'))
       dispatch(failPopUp(t('login_failed')))
     }
   }
@@ -217,12 +215,7 @@ export default function SignUpPage() {
                 </div>
                 <div>
                   <GoogleOAuthProvider clientId={process.env.clientId as string}>
-                    <GoogleLogin
-                      onSuccess={responseGoogle}
-                      onError={() => {
-                        console.log(t('login_failed'))
-                      }}
-                    />
+                    <GoogleLogin onSuccess={responseGoogle} onError={() => {}} />
                   </GoogleOAuthProvider>
                 </div>
               </div>
@@ -230,6 +223,12 @@ export default function SignUpPage() {
                 <p>{t('have_account')}</p>
                 <Link href='/login'>
                   <p className='font-bold text-primary'>{t('page_login')}</p>
+                </Link>
+              </div>
+              <div className='flex gap-1 mt-4'>
+                <p>{t('signup_teacher_account')}</p>
+                <Link href='/signup_teacher'>
+                  <p className='font-bold text-primary'>{t('signup_teacher')}</p>
                 </Link>
               </div>
             </CardFooter>
