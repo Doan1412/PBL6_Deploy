@@ -243,7 +243,7 @@ export default function PageLesson({ params }: { params: { id: string } }) {
                         </div>
                       ) : (
                         <div className='flex gap-8'>
-                          <div>
+                          <div onClick={() => router.push(`/user/teacher/${pramTeacherId.get('id_teacher')}`)}>
                             <h1 className='text-xl font-black'>{data?.message?.profile?.name}</h1>
                             <h2 className='flex gap-3 mt-1 text-gray'>
                               {followerCount} {t('follower')}
