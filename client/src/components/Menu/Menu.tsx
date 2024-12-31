@@ -18,8 +18,8 @@ const menuItems = [
     items: [
       {
         icon: home,
-        label: 'Home',
-        href: '/'
+        label: 'Dashboard',
+        href: '/admin'
       },
       {
         icon: teacher,

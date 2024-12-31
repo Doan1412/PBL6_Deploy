@@ -23,16 +23,12 @@ class Api::UsersController < Api::ApplicationController
   end
 
   def enrolled_courses
-    enrolleds = current_user.courses
-                            .joins(:course_assignments)
-                            .where(course_assignments:
-                            {
-                              status: CourseAssignment.statuses[:accepted]
-                            })
-                            .preload(:teacher, :category)
-                            .as_json(include: %i(teacher category),
-                                     methods: :average_rating)
-    json_response(message: {courses: enrolleds}, status: :ok)
+    enrolleds = Course.enrolled_by_user(current_user)
+                      .preload(:teacher, :category)
+                      .as_json(include: %i(teacher category),
+                               methods: :average_rating)
+  
+    json_response(message: { courses: enrolleds }, status: :ok)
   end
 
   private
